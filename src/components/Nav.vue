@@ -11,8 +11,8 @@ import { isDarkMode } from '../utils/LightSwitch';
       <RouterLink to='/about' class='hover:text-zinc-400 group-hover:transition-colors group-hover:duration-500'>About Me</RouterLink>
     </ul>
     <button @click="toggleDarkMode">
-      <v-icon v-if='isDarkMode' name='md-lightmode' scale="1.5"/>
-      <v-icon v-else='isDarkMode' name='md-nightlight' fill='#262626' scale="1.5"/>
+      <v-icon v-if='isDarkMode' name='md-lightmode' scale="1.4"/>
+      <v-icon v-else='isDarkMode' name='md-darkmode' fill='#262626' scale="1.4"/>
     </button>
   </div>
 </template>
