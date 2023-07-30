@@ -14,6 +14,6 @@ onMounted(() => {
 
 <template>
   <div :class="isDarkMode ? 'dark' : ''">
-    <RouterView class='bg-white text-dark dark:bg-dark dark:text-light'/>
+    <RouterView class='bg-white text-dark dark:bg-dark dark:text-light transition-colors duration-200'/>
   </div>
 </template>
