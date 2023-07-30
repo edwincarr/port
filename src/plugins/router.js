@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from '../views/Home.vue'
 import Blog from '../views/Blog.vue'
 import AboutMe from '../views/AboutMe.vue'
-import NotFound from '../components/404.vue'
+import NotFound from '../views/404.vue'
 
 const routes = [
   {path: '', name: 'Home', component: Home},

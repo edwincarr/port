@@ -6,6 +6,7 @@ import Footer from '../components/Footer.vue';
 <template>
   <div>
     <Nav />
+      <div class="h-screen"></div>
     <Footer />
   </div>
 </template>
