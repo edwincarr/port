@@ -1,9 +1,11 @@
 <script setup>
-
+import Nav from '../components/Nav.vue';
+import Footer from '../components/Footer.vue';
 </script>
 
 <template>
   <div>
-    Template
+    <Nav />
+    <Footer />
   </div>
 </template>

@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="isDarkMode ? 'dark' : ''">
-    <RouterView/>
+  <div :class="isDarkMode ? 'dark' : ''" class='bg-white dark:bg-black'>
+    <RouterView class='bg-white dark:bg-black'/>
   </div>
 </template>

@@ -18,9 +18,9 @@ const plausible = createPlausible({
 })
 
 import { OhVueIcon, addIcons } from "oh-vue-icons"
-import { CoGithub, CoLinkedinIn, FaBars } from "oh-vue-icons/icons"
+import { CoGithub, CoLinkedinIn, FaBars, MdLightmode, MdNightlight } from "oh-vue-icons/icons"
 
-addIcons(CoGithub, CoLinkedinIn, FaBars)
+addIcons(CoGithub, CoLinkedinIn, FaBars, MdLightmode, MdNightlight)
 
 const app = createApp(App);
 app.use(router)
