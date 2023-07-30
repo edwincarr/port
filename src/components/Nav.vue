@@ -4,7 +4,7 @@ import { isDarkMode } from '../utils/LightSwitch';
 </script>
 
 <template>
-  <div class="flex h-12 items-center px-14 justify-end gap-10 border-b dark:border-zinc-700">
+  <div class="flex h-14 items-center px-14 justify-end gap-10 border-b dark:border-zinc-700">
     <ul class="flex gap-4 text-lg group">
       <RouterLink to='/' class='hover:text-zinc-400 group-hover:transition-colors group-hover:duration-500'>Home</RouterLink>
       <RouterLink to='/blog' class='hover:text-zinc-400 group-hover:transition-colors group-hover:duration-500'>Blog</RouterLink>
