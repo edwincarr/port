@@ -9,9 +9,9 @@ import Education from '../components/Education.vue'
 <template>
   <div>
     <Nav />
-      <div class="flex flex-col px-[5%] md:px-[15%] md:py-[10%]">
+      <div class="flex flex-col px-[5%]">
         <Intro />
-        <div class=" flex flex-col md:flex-row md:mt-[10%] justify-evenly gap-10">
+        <div class="flex gap-3 flex-wrap md:mt-[5%] justify-center">
           <Skills/>
           <Education />
         </div>
