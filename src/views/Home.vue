@@ -11,7 +11,7 @@ import Education from '../components/Education.vue'
     <Nav />
       <div class="flex flex-col px-[5%]">
         <Intro />
-        <div class="flex gap-3 flex-wrap md:mt-[5%] justify-center">
+        <div class="flex gap-x-20 gap-y-12 flex-wrap md:mt-[5%] justify-center">
           <Skills/>
           <Education />
         </div>
