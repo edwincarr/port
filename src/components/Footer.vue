@@ -1,6 +1,6 @@
 <template>
   <div class='h-40 items-center justify-center flex flex-col gap-5'>
-    <div class="flex-col items-center flex">
+    <div class="flex-col items-center flex cursor-default">
       <h2 class="font-medium text-lg">Software Developer</h2>
       <p>Copyright © 2023 Edwin Carrillo</p>
     </div>
