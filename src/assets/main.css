@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "gt";
+  src:
+    url("./gt.woff")
+}
+
+@font-face {
+  font-family: "acorn";
+  src:
+    url("./acorn.woff");
+}
+
+@layer base {
+  html {
+    font-family: "gt";
+  }
+}
