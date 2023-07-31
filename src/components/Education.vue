@@ -6,11 +6,11 @@
     </div>
     <div>
       <h1 class="md:text-2xl">App Academy</h1>
-      <p class='px-3'>Test Driven Development (TDD), scalability, algorithms, Object-Oriented Programming (OOP), RESTful APIs, security, single-page apps, and web development best practices</p>
+      <p class='px-3'>Test Driven Development, Scalability, Algorithms, Object-Oriented Programming, REST APIs, Security, Single-Page Apps, and Best Practices</p>
     </div>
     <div>
       <h1 class="md:text-2xl">Cyber Academy</h1>
-      <p class='px-3'> Worked towards Cisco, CompTIA, and Linux certifications.</p>
+      <p class='px-3'>Worked towards Cisco, CompTIA, and Linux certifications.</p>
     </div>
   </div>
 </template>
