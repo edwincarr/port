@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[43vh] bg-neutral-800 rounded-lg overflow-hidden w-full">
+    <div class="h-[43vh] bg-neutral-800 rounded-lg overflow-hidden w-full shadow-2xl">
 
       <div class="bg-neutral-300 w-full h-7 p-2 flex justify-between">
         <div class="flex gap-1">

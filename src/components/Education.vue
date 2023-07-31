@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[43vh] w-full bg-opacity-50 bg-neutral-500 self-end rounded-lg border px-3 pt-7">
+  <div class="h-[43vh] w-full bg-opacity-50 bg-splash self-end rounded-lg border px-3 pt-7 shadow-2xl border-splash">
     <div>
       <h1 class="md:text-2xl">Columbus State Community College</h1>
       <p class='px-3'>Networking, Lower Level Languages, Cloud Fundamentals, Database Design, Linux, and Cyber Security.</p>
