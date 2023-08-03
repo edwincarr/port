@@ -31,3 +31,6 @@ coverage
 yarn.lock
 package-lock.json
 bun.lockb
+
+# enviorment
+.env
