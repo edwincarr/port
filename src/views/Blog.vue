@@ -8,7 +8,8 @@ import { store } from '../plugins/store';
 <template>
   <div>
     <Nav />
-      <div class="h-screen">
+      <div v-for="blog in store.blogs">
+        <div>{{ blog.title }}</div>
       </div>
     <Footer />
   </div>
