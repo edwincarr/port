@@ -4,7 +4,7 @@ import { isDarkMode } from './utils/LightSwitch'
 import { ref, onMounted } from 'vue';
 import { updateBlogs } from './plugins/store'
 
-import { request } from './plugins/datocms';
+import { request } from './utils/datocms';
 
 const blogPosts = ref([])
 const error = ref(null)
@@ -16,15 +16,11 @@ const query = `
     id
     title
     posted
+    blurb
     content {
       value
     }
-    preview {
-      responsiveImage {
-        src
-        bgColor
-      }
-    }
+    preview
   }
 }
 `
@@ -55,8 +51,6 @@ onMounted(async () => {
   <div :class="isDarkMode ? 'dark' : ''">
     <div v-if="loading">Loading...</div>
     <div v-else-if="error">Error</div>
-    <div v-else>
-      <RouterView class='bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-200'/>
-    </div>
+    <RouterView v-else class='bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-200'/>
   </div>
 </template>
