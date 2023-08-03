@@ -1,9 +1,48 @@
 <script setup>
 import { RouterView } from "vue-router"
-import { onMounted } from 'vue';
 import { isDarkMode } from './utils/LightSwitch'
+import { ref, onMounted } from 'vue';
+import { updateBlogs } from './plugins/store'
 
-onMounted(() => {
+import { request } from './plugins/datocms';
+
+const blogPosts = ref([])
+const error = ref(null)
+const loading = ref(true)
+
+const query = `
+{
+  allBlogs {
+    id
+    title
+    posted
+    content {
+      value
+    }
+    preview {
+      responsiveImage {
+        src
+        bgColor
+      }
+    }
+  }
+}
+`
+
+onMounted(async () => {
+  try {
+    blogPosts.value = await request({
+      query,
+      variables: {
+        limit: 10
+      }
+    });
+    updateBlogs(blogPosts)
+  } catch (e) {
+    error.value = e;
+  }
+  loading.value = false;
+
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     isDarkMode.value = true;
   } else {
@@ -14,6 +53,10 @@ onMounted(() => {
 
 <template>
   <div :class="isDarkMode ? 'dark' : ''">
-    <RouterView class='bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-200'/>
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Error</div>
+    <div v-else>
+      <RouterView class='bg-light text-dark dark:bg-dark dark:text-light transition-colors duration-200'/>
+    </div>
   </div>
 </template>
