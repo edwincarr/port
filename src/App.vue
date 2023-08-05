@@ -3,6 +3,7 @@ import { RouterView } from "vue-router"
 import { isDarkMode } from './utils/LightSwitch'
 import { ref, onMounted } from 'vue';
 import { updateBlogs } from './plugins/store'
+import { gql } from "graphql-request";
 
 import { request } from './utils/datocms';
 
@@ -10,7 +11,7 @@ const blogPosts = ref([])
 const error = ref(null)
 const loading = ref(true)
 
-const query = `
+const query = gql`
 {
   allBlogs {
     id
@@ -19,6 +20,21 @@ const query = `
     blurb
     content {
       value
+      blocks {
+        __typename
+        ... on ImageRecord {
+          id
+          image {
+            responsiveImage {
+              src
+              width
+              height
+              alt
+              title
+            }
+          }
+        }
+      }
     }
     preview
   }
