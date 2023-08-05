@@ -2,16 +2,12 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import md from 'vite-plugin-vue-markdown'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: { port: 3000},
   plugins: [
-    md(),
-    vue({
-      include: [/\.vue$/, /\.md$/],
-    }),
+    vue(),
   ],
   resolve: {
     alias: {
