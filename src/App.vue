@@ -57,8 +57,10 @@ onMounted(async () => {
 
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     isDarkMode.value = true;
+    document.body.style.backgroundColor = '#1a1a1a'
   } else {
     isDarkMode.value = false;
+    document.body.style.backgroundColor = '#ede7de'
   }
 })
 
