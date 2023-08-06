@@ -17,7 +17,8 @@ const renderBlock = ({ record }) => {
     case 'ImageRecord':
       return h(Image, {
         data: record.image.responsiveImage,
-        class: 'w-fit'
+        class: 'w-fit',
+        priority: true
       });
     default:
       return null;
