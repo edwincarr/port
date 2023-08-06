@@ -31,6 +31,7 @@ const query = gql`
               height
               alt
               title
+              base64
             }
           }
         }
