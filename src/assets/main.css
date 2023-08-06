@@ -41,3 +41,14 @@ a {
 b {
   font-family: "acorn";
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3a5e52;
+  border-radius: 100px;
+}
