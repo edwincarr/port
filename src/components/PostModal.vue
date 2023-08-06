@@ -42,7 +42,7 @@ const renderBlock = ({ record }) => {
     <div v-if="open" class="modal bg-black bg-opacity-20 py-10 " @click="closeModal">
       <div class="px-10 lg:mx-[23%] lg:text-2xl max-w-fit z-[9999] rounded-2xl dark:bg-dark bg-light">
         <div class="md:flex items-center justify-evenly">
-          <h1 class="text-5xl mb-10 pt-10"><b class="text-splash">{{ title }}</b></h1>
+          <h1 class="text-5xl mb-10 pt-10"><b class="text-compSplash">{{ title }}</b></h1>
           <p class="text-xl max-md:mb-10">{{ posted }}</p>
         </div>
         <StructuredText :data="content" :renderBlock="renderBlock" class="flex flex-col gap-5 items-center"/>
