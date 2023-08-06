@@ -1,12 +1,15 @@
 <script setup>
 import Nav from '../components/Nav.vue';
 import Footer from '../components/Footer.vue';
+import Me from '../components/Me.vue';
+import Interests from '../components/Interests.vue';
 </script>
 
 <template>
   <div>
     <Nav />
-      <div class="h-screen"></div>
+    <Me />
+    <Interests />
     <Footer />
   </div>
 </template>
