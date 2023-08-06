@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         dark: '#1a1a1a',
         light: '#ede7de',
-        splash: '#3a5e52'
+        splash: '#3a5e52',
+        compSplash: '#7c2f21'
       }
     },
   },
