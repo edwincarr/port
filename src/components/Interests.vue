@@ -20,7 +20,7 @@
         <img src="../assets/images/flcl.png" class="h-40 lg:h-72 rounded-xl"/>
         <div class=' text-center min-w-[10rem] md:max-w-xl md:min-w-[36rem]'>
           <h1 class="text-xl">Watching and reading Anime/Manga</h1>
-          <p class="text-left">Started watching Naruto as a kid and now I'm here: <a href="https://anilist.co/user/Ghostfacecix/animelist" target="_blank" class="text-compSplash">Anilist</a></p>
+          <p class="text-left">Started watching Naruto as a kid and now I'm here: <a href="https://anilist.co/user/Ghostcix/animelist" target="_blank" class="text-compSplash">Anilist</a></p>
         </div>
       </div>
       <div class="flex items-center justify-evenly">
