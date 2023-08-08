@@ -17,7 +17,7 @@ const renderBlock = ({ record }) => {
     case 'ImageRecord':
       return h(Image, {
         data: record.image.responsiveImage,
-        class: 'w-fit',
+        class: 'w-fit self-center',
         priority: true
       });
     default:
@@ -45,7 +45,7 @@ const renderBlock = ({ record }) => {
           <h1 class="text-5xl mb-10 pt-10"><b class="text-compSplash">{{ title }}</b></h1>
           <p class="text-xl max-md:mb-10">{{ posted }}</p>
         </div>
-        <StructuredText :data="content" :renderBlock="renderBlock" class="flex flex-col gap-5 items-center"/>
+        <StructuredText :data="content" :renderBlock="renderBlock" class="flex flex-col gap-5"/>
         <button @click="open = false" class="my-14">Close</button>
       </div>
     </div>
@@ -55,5 +55,10 @@ const renderBlock = ({ record }) => {
 .modal {
   position: absolute;
   top: 0%;
+}
+:deep(h2) {
+  font-size:xx-large;
+  font-weight: bold;
+  margin-top: 20px;
 }
 </style>
