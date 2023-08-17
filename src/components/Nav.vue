@@ -12,7 +12,7 @@ import { isDarkMode } from '../utils/LightSwitch';
       <RouterLink to='/about' class='hover:text-splash group-hover:transition-colors group-hover:duration-500'>About</RouterLink>
     </ul>
     <div class="flex gap-8 text-lg">
-      <a href="https://edwinc.tech/resume.pdf" target="_blank" class='hover:text-splash'>Resume</a>
+      <a href="https://edwinc.tech/resume.pdf" target="_blank" class='hover:text-splash hidden sm:block'>Resume</a>
       <button @click="toggleDarkMode" class="hover:text-splash transition duration-200">
         <v-icon v-if='isDarkMode' name='md-lightmode' scale="1.4"/>
         <v-icon v-else='isDarkMode' name='md-darkmode' scale="1.4"/>
