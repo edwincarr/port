@@ -23,13 +23,13 @@ a {
 @font-face {
   font-family: "gt";
   src:
-    url("./gt.woff")
+    url("./fonts/gt.woff")
 }
 
 @font-face {
-  font-family: "acorn";
+  font-family: "martin";
   src:
-    url("./acorn.woff");
+    url("./fonts/martin.ttf");
 }
 
 @layer base {
@@ -39,7 +39,7 @@ a {
 }
 
 b {
-  font-family: "acorn";
+  font-family: "martin";
 }
 
 /* width */
