@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center lg:flex-row lg:justify-center lg:px-[15%] gap-10 lg:mt-24 mt-10">
     <div>
-      <img src="../assets/images/pfp.jpg" class="h-80 rounded-lg aspect-square hover:rounded-full duration-[10s] transition-all cursor-help"/>
+      <img src="../assets/images/pfp.jpg" loading="eager" class="h-80 rounded-lg aspect-square hover:rounded-full duration-[10s] transition-all cursor-help"/>
     </div>
     <div class="flex flex-col gap-4 px-[5%]">
       <h1 class="text-splash text-5xl"><b class="lg:text-7xl">Hey</b> 🇲🇽</h1>
