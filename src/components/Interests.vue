@@ -2,11 +2,8 @@
   <div class="my-10 lg:my-32 px-[2%] flex flex-col items-center lg:px-[15%]">
     <h1 class="text-6xl mb-10"><b class="text-splash">Interests 🎭</b></h1>
     <div class="w-full flex flex-col gap-20">
-      <div
-        v-for="(section, index) in sections"
-        :key="index"
-        class="animated-section"
-      >
+      <div v-for="(section, index) in sections" :key="index" class="animated-section">
+
         <div v-if="index % 2 === 0" class="flex items-center justify-evenly">
           <img :src="section.image" class="h-40 lg:h-72 rounded-xl" />
           <div class="text-center min-w-[10rem] md:max-w-xl md:min-w-[36rem]">
@@ -14,6 +11,7 @@
             <p class="text-left" v-html="section.content"></p>
           </div>
         </div>
+
         <div v-else class="flex items-center justify-evenly">
           <div class="text-center min-w-[10rem] md:max-w-xl md:min-w-[36rem]">
             <h1 class="text-xl">{{ section.title }}</h1>
@@ -21,13 +19,14 @@
           </div>
           <img :src="section.image" class="h-40 aspect-square lg:h-72 rounded-xl" />
         </div>
+        
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import Tommy from '@/assets/images/tommy.jpg';
 import PC from '@/assets/images/pc.jpg';
 import FLCL from '@/assets/images/flcl.png';
@@ -84,7 +83,7 @@ onMounted(() => {
 
   sectionsElements.forEach((section) => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: .8,
+      threshold: .3,
     });
 
     observer.observe(section);
@@ -95,7 +94,7 @@ onMounted(() => {
 <style scoped>
 .animated-section {
   opacity: 0;
-  transform: translateY(50px); /* Initially hidden, translate down */
+  /* transform: translateY(50px);  */
   transition: opacity 0.5s, transform 0.5s;
 }
 
