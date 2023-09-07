@@ -18,7 +18,6 @@
         <ul class="flex gap-x-5 text-neutral-400 pl-7 flex-wrap">
           <li>Javascript</li>
           <li>Python</li>
-          <li>C#</li>
         </ul>
       </div>
 
@@ -28,7 +27,6 @@
           <li>React.js</li>
           <li>Vue</li>
           <li>Express.js</li>
-          <li>Dotnet</li>
           <li>Flask</li>
         </ul>
       </div>
